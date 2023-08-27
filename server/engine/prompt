@@ -1,0 +1,120 @@
+from this transcription of a youtube video:
+1. convert it into article like in medium.com. 
+2. video title is "What Is LangChain - LangChain + ChatGPT Overview"
+3. the transcription may contain typo, fix it accordingly with video title if you find any.
+4. answer with only the article.
+transcription = 
+Hello, good people and welcome to a tutorial series on lane chain.
+In this introductory video, we're going to talk about our goals for this series.
+We're going to talk about what lane chain is and we're going to talk about why I think
+it's a crucial investment to put energy into learning what lane chain is and how you can
+use it.
+Now, first off, how the series is going to work, we're going to run through the documentation
+that they've provided and I'm going to speak over the documentation and provide some real
+world code samples and extend them just a little bit so you can see some functionality
+that you may find applicable in your business or your personal life.
+Now how is the series going to be going?
+Well, it's mostly going to be around short tutorial videos.
+However, you may get crazy and go, say, roaring kitty style and do some three hour videos,
+but we will see.
+Now, why is lane chain important and what is it?
+Well, first, before I go and explain that, I want to kind of set up what the problem
+is.
+Now, what we're looking at here is we're looking at chat GPT and this is something that we
+all know and I'm going to first ask chat GPT, what is lane chain?
+What is lane chain?
+And we'll see what it says for us and says, oh, shoot, I'm sorry, but I'm not familiar
+with the term lane chain.
+Now, why could this be?
+Well, it's because lane chain is a more recent library that just came out.
+I think I was just looking at our Harrison was speaking and he said he went full time
+on it three weeks ago.
+So this is something like in January of 23, he went full time on it.
+That is one of the creators of lane chain.
+Now this is new and chat GPT has not been trained on data more recent than I think 2021.
+Now open AI is definitely going to get there eventually, but they haven't done it yet.
+So that's problem number one.
+Problem number two is how many Google docs did I write last year?
+Now, if I were to ask chat GPT, how many Google docs did I write last year?
+Let's see what it says.
+Let's give it a second.
+It's going a little bit slow.
+I'm going to pause it here just until it comes back for us.
+And there it goes.
+So it says, I'm sorry, but as an AI model, I do not have access to your personal information,
+which makes complete sense because I've not linked my Google drive to it and it has no
+understanding about who I am.
+Well, not in the explicit sense and it can't do that for me.
+So what's really cool is that that is where lane chain likes to play.
+Now if I were to represent this in a different way, rather than just questions, what we're
+doing here is I'm this cool person with the sunglasses and I'm accessing the open AI API,
+the artificial intelligence models.
+I just did it through my browser, which is over here on the left, but you could also
+do this through the API and they have an API that you can go in and there's plenty of
+tutorials about how to use that, which is cool.
+However, it's not connected to my outside information and this is where lane chain starts
+to come in.
+So if I put myself right in the middle there, what lane chain does is it's going to connect
+your AI models that you want to use, whether it's open AI or something on Huggingface and
+it is going to connect to outside sources and it's going to do some really cool things
+without those outside sources.
+So all of a sudden you can start to chain together commands, which is the chain in lane
+chain and you can say, Hey, what is the weather today to open AI?
+And it is going to come back and those language models are going to understand what are the
+series of questions that it needs to do to understand how to get the information that
+you want.
+Now, the applications of this are almost endless and they're building even more integrations
+every single day.
+If you follow them on Twitter or their GitHub change log, you can see some really cool things
+that they're putting out.
+So I think that this is an amazing place to start to learn because by learning this or
+by choosing to learn this, you're betting that open AI and Huggingface are not going
+to build direct integrations to the tools that you use every day.
+Now in my opinion, open AI, open AI wants to remain on the API at the very bottom layer
+and just be an API for certain machine learning models.
+They do not want to build direct integrations into Google, into Notion, into Wolfram Alvram.
+They want the community to do that.
+So by learning lane chain, you're taking the bet that there's going to be a separation
+and different abstraction layers and this is the piece that is going to connect those
+different layers.
+Now, is lane chain going to be the library that wins it all and going to be very ubiquitous?
+Who knows?
+I don't know.
+But I guarantee that by learning the functionality in this library, whichever one does come around,
+you're going to find extremely valuable.
+Now that's lane chain and I encourage you to go check out their documentation.
+Now in fact, what we're going to do in a lot of this tutorial series, let me just make
+this a little smaller, what we're going to do in this tutorial series is we're going
+to run through their documentation and I'm going to start to explain what you can do
+with it.
+They have a lot of cool modules and they'll have a lot of cool use cases like starting
+to create agents that can do things off here on your behalf, how to create chatbots, how
+to do some generations and question answering, summarization, we're going to do some really
+cool stuff here, evaluation and et cetera, et cetera.
+Now as more documentation comes out, we'll do more videos, but this is just a quick overview
+about how this is going to run.
+I encourage you to subscribe to this channel to see when other videos come out or if you
+want to get them via email, go to dataindependent.com, which this channel is associated with and
+you can sign up for the email newsletter, not a newsletter, but just get updated when
+new videos come out there.
+Now I hope that you're having fun.
+I hope you're going to enjoy this with me because I'm really excited to learn this alongside
+of you and build some really cool things.
+The last thing that I will say is my emphasis as a instructor is always about real world
+applications.
+I don't really care about theory.
+I'm not a hardcore machine learning stats person who's going to show you some academic
+papers.
+I really care about having you make impact in the B2B environment or in your personal
+life because I believe that these tools can leverage up the amount of impact that we can
+have so that one person or a small team of people can create a lot more good in the world
+and impact on the world.
+So I'll wrap up with that.
+Very excited to learn with you.
+Let's have some fun.
+
+now extract keyword. 
+1. keywords must be relevant with the text.
+2. keywords must be precise with the text.
+3. each keywords must be as little word as possible and not verbose, eg API services --> API.
+4. answer only with format of python list.

@@ -1,0 +1,50 @@
+version: '3.9'
+
+services:
+  client:
+    build:
+      context: 'client'
+      dockerfile: 'Dockerfile'
+    ports:
+      - "8501:8501"
+    environment:
+      API_ENDPOINT: ${API_ENDPOINT}
+    networks:
+      - team-5
+    restart: always
+  
+  server:
+    build:
+      context: 'server'
+      dockerfile: 'Dockerfile'
+    ports:
+    - "8000:80"
+    volumes:
+      - ./server/data:/app/data
+    environment:
+      DBSTRING: ${DBSTRING}
+      OPENAI_API_KEY: ${OPENAI_API_KEY}
+      FASTAPI_SECRET_KEY: ${FASTAPI_SECRET_KEY}
+      GITHUB_USER: ${GITHUB_USER}
+      GITHUB_PAT: ${GITHUB_PAT}
+      PUBLIC_HOSTNAME: ${PUBLIC_HOSTNAME}
+
+    networks:
+      - team-5
+    restart: always
+
+  nginx:
+    build:
+      context: 'nginx'
+      dockerfile: 'Dockerfile'
+    ports:
+      - "81:80"
+    depends_on:
+      - "client"
+      - "server"
+    networks:
+      - team-5
+    restart: always
+
+networks:
+  team-5:
